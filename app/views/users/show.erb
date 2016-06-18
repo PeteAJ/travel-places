@@ -1,0 +1,6 @@
+<p> Here are your location destinations, <%= @user.username %>
+<% @user.locations.each do |location| %>
+  <ul>
+    <li><a href="/locations/<%=location.id%>"><%= location.name %></a></li>
+  </ul>
+<% end %>
